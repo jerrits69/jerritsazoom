@@ -459,3 +459,76 @@ hr{
     background-color: dimgrey;
     text-align: center;
 }
+/*Mobile*/
+@media (max-width: 768px) {
+    /*Header*/
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .info a{
+        padding-right: 0;
+    }
+    #login {
+        width: 100%;
+    }
+    /*Slogan*/
+    .slogan{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    /*Why*/
+    .why{
+        margin: 20px;
+    }
+    /*About us*/
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .about-us img {
+        width: 100%;
+        height: auto;
+    }
+    .about-us-info p{
+        text-align: center;
+    }
+    /*Fleet*/
+    /*FAQs*/
+    .faqs{
+        display: flex;
+        flex-direction: center;
+        gap: 10px;
+    }
+    .faqs h1 {
+        font-size: 50px;
+    }
+    .faqs-container details {
+        font-size: 20px;
+        max-width: 100%;
+    }
+    .faqs-info p {
+        font-size: 18px;
+    }
+    /*Footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 200px;
+        max-height: 100px;
+    }
+}
