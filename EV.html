@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet of Cars</title>
+    <link rel="stylesheet" href="AZoom.css">
+</head>
+<body>
+    <!--Header of the website-->
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="AZoom logo">
+        </a>
+        <nav class="info">
+            <a href="index.html">Home</a>
+            <a href="EV.html">Cars</a>
+            <a href="process.html#locations">Locations</a>
+            <a href="index.html#about-id">About Us</a>
+            <a href="index.html#faq1">FAQs</a>
+            <button id="login">Login</button>
+        </nav>
+    </header>
+    <!--Cars-->
+    <section class="allCars" id="cars">
+        <div class="each-car">
+            <img src="https://pngimg.com/d/tesla_car_PNG55.png" alt="car1">
+            <h1>Tesla</h1>
+            <p>Daily:&nbsp;<strong>200$</strong></p>
+            <p>Weekly:&nbsp;<strong>1350$</strong></p>
+            <p>Monthly:&nbsp;<strong>6000$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+            
+        </div>
+        <div class="each-car">
+            <img src="https://www.pngplay.com/wp-content/uploads/2/White-BMW-Download-Free-PNG.png" alt="car1">
+            <h1>BMW</h1>
+            <p>Daily:&nbsp;<strong>220$</strong></p>
+            <p>Weekly:&nbsp;<strong>1400$</strong></p>
+            <p>Monthly:&nbsp;<strong>6750$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="data:image/jpeg;base64,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" alt="car1">
+            <h1>Audi</h1>
+            <p>Daily:&nbsp;<strong>230$</strong></p>
+            <p>Weekly:&nbsp;<strong>1560$</strong></p>
+            <p>Monthly:&nbsp;<strong>7099$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://pngimg.com/d/bugatti_PNG23.png" alt="car1">
+            <h1>Bugatti</h1>
+            <p>Daily:&nbsp;<strong>300$</strong></p>
+            <p>Weekly:&nbsp;<strong>2030$</strong></p>
+            <p>Monthly:&nbsp;<strong>9220$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://pngimg.com/d/lamborghini_PNG10703.png" alt="car1">
+            <h1>Lamborghini</h1>
+            <p>Daily:&nbsp;<strong>380$</strong></p>
+            <p>Weekly:&nbsp;<strong>2540$</strong></p>
+            <p>Monthly:&nbsp;<strong>11699$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://img1.wallspic.com/previews/4/7/6/7/3/137674/137674-mercedes_benz_sls_amg-sports_car-mercedes_benz_slr_mclaren-car-mercedes_amg-x750.jpg" alt="car1">
+            <h1>Mercedes</h1>
+            <p>Daily:&nbsp;<strong>270$</strong></p>
+            <p>Weekly:&nbsp;<strong>1799$</strong></p>
+            <p>Monthly:&nbsp;<strong>8250$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://img.goodfon.com/wallpaper/big/8/b0/amg-mercedes-benz-c-class.webp" alt="car1">
+            <h1>Mercedes</h1>
+            <p>Daily:&nbsp;<strong>210$</strong></p>
+            <p>Weekly:&nbsp;<strong>1369$</strong></p>
+            <p>Monthly:&nbsp;<strong>6450$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-red-toyota-ft-1-carcarvehicletransporttoyota-961524666312xezaj.png" alt="car1">
+            <h1>Toyota</h1>
+            <p>Daily:&nbsp;<strong>290$</strong></p>
+            <p>Weekly:&nbsp;<strong>1999$</strong></p>
+            <p>Monthly:&nbsp;<strong>8888$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://www.pngplay.com/wp-content/uploads/13/Honda-Civic-Type-R-Background-PNG-Image.png" alt="car1">
+            <h1>Honda</h1>
+            <p>Daily:&nbsp;<strong>170$</strong></p>
+            <p>Weekly:&nbsp;<strong>1030$</strong></p>
+            <p>Monthly:&nbsp;<strong>5111$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+        <div class="each-car">
+            <img src="https://file.aiquickdraw.com/imgcompressed/img/compressed_a9cfd0941a082ee4597261a035a8c523.webp" alt="car1">
+            <h1>Porsche</h1>
+            <p>Daily:&nbsp;<strong>250$</strong></p>
+            <p>Weekly:&nbsp;<strong>1700$</strong></p>
+            <p>Monthly:&nbsp;<strong>7699$</strong></p>
+            <a href="#"><button class="reserveButton">Reserve Now</button></a>
+        </div>
+    </section>
+    <div id="overlay"></div>
+    <!--Login-->
+    <form id="login-form">
+        <span id="login-off">&times</span>
+        <h1 id="title2">Login</h1>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button type="button" id="submit">Login</button>
+        <div id="message"></div>
+        <p id="have-account">Dont have an account? Click <a href="#" id="no-have-account">here</a></p>        
+    </form>
+    <!--Register-->
+    <form id="register-form">
+        <span id="register-off">&times</span>
+        <h1 id="title3">Register</h1>
+        <input type="text" id="name2" name="name2" placeholder="Enter your name" required>
+        <input type="password" id="password2" name="password2" placeholder="Enter your password" required>
+        <input type="number" name="age" id="age" placeholder="Age must be minimum 18" required>
+        <select id="drivingLicense">
+            <option value="" disabled selected hidden>Do you have driving license?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <button type="button" id="submit2">Register</button>
+    </form>
+    <!--Footer section-->
+    <section>
+        <footer class="footer">
+            <div class="all-info">
+                <h2>Contact us:</h2>
+                <p><span class="detail-info">Email:</span> AZoomJerrits@gmail.com</p>
+                <p><span class="detail-info">Phone:</span> +65 6126 9126</p>
+                <p><span class="detail-info">Operating Hours:</span> 8am - 5pm</p>
+                <p><span class="detail-info">Main Office:</span> Bishan North Shopping Mall</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow our social media @AZoomJerrits</h2>
+                <img src="https://c.files.bbci.co.uk/C5CC/production/_89663605_instagram_logo_976.jpg" alt="instagram">
+                <img src="https://brandlogos.net/wp-content/uploads/2024/06/facebook_icon_2013-2019-logo_brandlogos.net_9ft13.png" alt="facebook">
+            </div>
+        </footer>
+        <footer id="copyright">&copy; 2025 AZoom Car Rental</footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

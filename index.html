@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Car Rental Booking Singapore</title>
+    <link rel="stylesheet" href="AZoom.css">
+</head>
+<body>
+    <!--Header of the website-->
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="AZoom logo">
+        </a>
+        <nav class="info">
+            <a href="index.html">Home</a>
+            <a href="EV.html">Cars</a>
+            <a href="process.html#locations">Locations</a>
+            <a href="#about-id">About Us</a>
+            <a href="#faq1">FAQs</a>
+            <button id="login">Login</button>
+        </nav>
+    </header>
+    <div id="overlay"></div>
+    <!--Login-->
+    <form id="login-form">
+        <span id="login-off">&times</span>
+        <h1 id="title2">Login</h1>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button type="button" id="submit">Login</button>
+        <div id="message"></div>
+        <p id="have-account">Dont have an account? Click <a href="#" id="no-have-account">here</a></p>        
+    </form>
+    <!--Register-->
+    <form id="register-form">
+        <span id="register-off">&times</span>
+        <h1 id="title3">Register</h1>
+        <input type="text" id="name2" name="name2" placeholder="Enter your name" required>
+        <input type="password" id="password2" name="password2" placeholder="Enter your password" required>
+        <input type="number" name="age" id="age" placeholder="Age must be minimum 18" required>
+        <select id="drivingLicense">
+            <option value="" disabled selected hidden>Do you have driving license?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <button type="button" id="submit2">Register</button>
+    </form>
+    <!--Slogan Section-->
+    <section class="slogan">
+        <div class="slogan-text">
+            <h1>Zoom Anywhere, Anytime with AZoom</h1>
+            <p>Simple. Convenient. Affordable. Most trusted Car Rental in Singapore.</p>
+            <div class="buttons">
+                <a href="EV.html">
+                    <button class="booking">Book Now!</button>
+                </a>
+                <a href="process.html#steps">
+                    <button class="booking">Booking Procedures</button>
+                </a>
+            </div>
+        </div>
+        <img id="ev" src="https://static.vecteezy.com/system/resources/previews/022/693/290/non_2x/electric-car-charging-at-the-charging-station-electric-vehicle-concept-illustration-vector.jpg" alt="EV car">
+    </section>
+    <!--Why section-->
+    <section class="why">
+        <h1>Why choose AZoom?</h1>
+        <div class="why-box">
+            <div class="why-details">
+                <img src="https://media.istockphoto.com/id/172166528/photo/isolated-money.jpg?s=612x612&w=0&k=20&c=hf4p-QPTvA4sPExWs-YTFQQcQjm4Uus6An_soVOCPBQ=" alt="Money">
+                <h3>Low Pricing</h3>
+                <p>Cheapest rental pricing in Singapore!</p>
+            </div>
+            <div class="why-details">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpihPwxD-ESgOGgo-Dpgj8RR5GJ9lzOzZXMjsjMFjICoNua3ngN3OrTsaG_RC4AE-u9mk&usqp=CAU" alt="Car">
+                <h3>Fast Booking</h3>
+                <p>Easy steps to book the car of your choice!</p>
+            </div>
+        </div>
+    </section>
+    <!--About Us Section-->
+    <section class="about-us" id="about-id">
+        <img src="https://electrek.co/wp-content/uploads/sites/3/2023/10/Kia-new-EV-1.jpeg?quality=82&strip=all" alt="EV cars">
+        <div class="about-us-info">
+            <h1>About Us</h1>
+            <p>AZoom is the only Singapore rental company to provide modern Electric Vehicles.
+                We combine convenience and affordability to ensure you guys as our customers will have a pleasant experience.
+                Currently, AZoom provides a range of Electric Cars to cater for any occasion, we always ensure prioritizing customer's needs and experience.
+            </p>
+        </div>
+    </section>
+    <!--Explore section-->
+    <h1 id="explore1">Explore our fleet of Cars</h1>
+    <section class="fleet-cars">
+        <div class="explore">
+            <p>What are you waiting for? Start booking your car now!</p>
+            <a href="EV.html">
+                <button id="explore-button">Explore more cars</button>
+            </a>
+        </div>
+    </section>
+    <!--FAQs section-->
+    <section class="faqs" id="faq1">
+        <h1>FAQs</h1>
+        <div class="faqs-container">
+            <details>
+                <summary>Where do I return the vehicle?</summary>
+                <div class="faqs-info">
+                    <p>AZoom have 3 return points for you to park your vehicle after you are done using.</p>
+                </div>
+            </details>
+            <details>
+                <summary>What are the requirements to rent from AZoom?</summary>
+                <div class="faqs-info">
+                    <ul>
+                        <li>Having a valid driving license with at least 1 year of driving experience</li>
+                        <li>Registering as AZoom member</li>
+                        <li>If you are holding a P-plate you must be at least 25 years old</li>
+                    </ul>
+                </div>
+            </details>
+            <details>
+                <summary>What are the acceptable payment methods?</summary>
+                <div class="faqs-info">
+                    <p>AZoom currently accepts credit card only.</p>
+                </div>
+            </details>
+            <details>
+                <summary>Can I extend my rental period after booking?</summary>
+                <div class="faqs-info">
+                    <p>You will have to call our hotline 2 hours in advance if you wish to extend your booking.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+    <!--Footer section-->
+    <section>
+        <footer class="footer">
+            <div class="all-info">
+                <h2>Contact us:</h2>
+                <p><span class="detail-info">Email:</span> AZoomJerrits@gmail.com</p>
+                <p><span class="detail-info">Phone:</span> +65 6126 9126</p>
+                <p><span class="detail-info">Operating Hours:</span> 8am - 5pm</p>
+                <p><span class="detail-info">Main Office:</span> Bishan North Shopping Mall</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow our social media @AZoomJerrits</h2>
+                <img src="https://c.files.bbci.co.uk/C5CC/production/_89663605_instagram_logo_976.jpg" alt="instagram">
+                <img src="https://brandlogos.net/wp-content/uploads/2024/06/facebook_icon_2013-2019-logo_brandlogos.net_9ft13.png" alt="facebook">
+            </div>
+        </footer>
+        <footer id="copyright">&copy; 2025 AZoom Car Rental</footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZoom Reserervation</title>
+    <link rel="stylesheet" href="AZoom.css">
+</head>
+<body>
+    <!--Header of the website-->
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="AZoom logo">
+        </a>
+        <nav class="info">
+            <a href="index.html">Home</a>
+            <a href="EV.html">Cars</a>
+            <a href="process.html#locations">Locations</a>
+            <a href="index.html#about-id">About Us</a>
+            <a href="index.html#faq1">FAQs</a>
+            <button id="login">Login</button>
+        </nav>
+    </header>
+    <!--Form to reserve car-->
+    <section class="booking-car">
+        <div>
+            <form id="reserveForm">
+                <h1>User Particulars</h1>
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Jerrits Seow" required>
+                <label for="email2">Email:</label>
+                <input type="text" id="email2" name="email2" placeholder="Jerrits@gmail.com" required>
+                <label for="phone2">Phone Number:</label>
+                <input type="number" id="phone2" name="phone2" placeholder="1269 1269" required>         
+                <hr>
+                <h1>Rental Details</h1>
+                <label for="cDate">Collection Date:</label>
+                <input type="date" id="cDate" name="cDate" required>
+                <label for="rDate">Return Date:</label>
+                <input type="date" id="rDate" name="rDate" required>
+                <label for="cTime">Collection Time:</label>
+                <input type="time" id="cTime" name="cTime" required>
+                <label for="rTime">Return Time:</label>
+                <input type="time" id="rTime" name="rTime" required>
+                <label for="cPoint">Collection Point:</label>
+                <select id="cPoint" name="cPoint" required>
+                    <option disabled selected hidden>Select Office</option>
+                    <option>Bishan North Shopping Mall</option>
+                    <option>ION Orchard</option>
+                </select>
+                <label for="rPoint">Return Point:</label>
+                <select id="rPoint" name="rPoint" required>
+                    <option disabled selected hidden>Select Community Club</option>
+                    <option>Bishan Community Club</option>
+                    <option>Marymount Community Club</option>
+                    <option>Ang Mo Kio Community Club</option>
+                </select>
+                <hr>
+                <h1>Credit Card Details</h1>
+                <label for="cardholder">Cardholder:</label>
+                <input type="text" id="cardholder" name="cardholder" placeholder="Enter Full Name" required>
+                <label for="cardnumber">Card Number:</label>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="1269 1269 1269 1269" required>
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" placeholder="***" required>
+                <label for="exdate">Expiration Date</label>
+                <input type="text" id="exdate" name="exdate" placeholder="01/26" required>
+                <button id="submit-reserve">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div id="overlay"></div>
+    <!--Login-->
+    <form id="login-form">
+        <span id="login-off">&times</span>
+        <h1 id="title2">Login</h1>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <button type="button" id="submit">Login</button>
+        <div id="message"></div>
+        <p id="have-account">Dont have an account? Click <a href="#" id="no-have-account">here</a></p>        
+    </form>
+    <!--Register-->
+    <form id="register-form">
+        <span id="register-off">&times</span>
+        <h1 id="title3">Register</h1>
+        <input type="text" id="name2" name="name2" placeholder="Enter your name" required>
+        <input type="password" id="password2" name="password2" placeholder="Enter your password" required>
+        <input type="number" name="age" id="age" placeholder="Age must be minimum 18" required>
+        <select id="drivingLicense">
+            <option value="" disabled selected hidden>Do you have driving license?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <button type="button" id="submit2">Register</button>
+    </form>
+    <!--Footer section-->
+    <section>
+        <footer class="footer">
+            <div class="all-info">
+                <h2>Contact us:</h2>
+                <p><span class="detail-info">Email:</span> AZoomJerrits@gmail.com</p>
+                <p><span class="detail-info">Phone:</span> +65 6126 9126</p>
+                <p><span class="detail-info">Operating Hours:</span> 8am - 5pm</p>
+                <p><span class="detail-info">Main Office:</span> Bishan North Shopping Mall</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow our social media @AZoomJerrits</h2>
+                <img src="https://c.files.bbci.co.uk/C5CC/production/_89663605_instagram_logo_976.jpg" alt="instagram">
+                <img src="https://brandlogos.net/wp-content/uploads/2024/06/facebook_icon_2013-2019-logo_brandlogos.net_9ft13.png" alt="facebook">
+            </div>
+        </footer>
+        <footer id="copyright">&copy; 2025 AZoom Car Rental</footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
