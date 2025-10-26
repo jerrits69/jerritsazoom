@@ -500,7 +500,7 @@ hr{
         width: 100%;
         height: auto;
     }
-    .about-us-info p{
+    .about-us-info p, h1{
         text-align: center;
     }
     /*Fleet*/
@@ -508,7 +508,7 @@ hr{
     .faqs{
         display: flex;
         flex-direction: center;
-        gap: 10px;
+        gap: 30px;
     }
     .faqs h1 {
         font-size: 50px;
@@ -530,5 +530,51 @@ hr{
     .social-media img{
         max-width: 200px;
         max-height: 100px;
+    }
+    #copyright{
+        text-align: center;
+    }
+    /*EV*/
+    .allCars{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        gap: 20px;
+    }
+    .each-car img{
+        max-width: 100%;
+    }
+    /*Login Register form*/
+    #login-form, #register-form{
+        width: 80%;
+        padding: 10px;
+    }
+    /*Reserve form*/
+    #reserveForm{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+    }
+    /*Process*/
+    .booking-procedures {
+        padding: 10px;
+        gap: 20px;
+    }
+    #steps, #locations{
+        text-align: center;
+        font-size: 30px;
+    }
+    .pick-up, .return-procedures{
+        width: 80%;
+        padding: 10px;
+    }
+    .location img{
+        width: 100%;
+        height: auto;
+    }
+    .location p{
+        font-size: 17px;
+        text-align: center;
+        padding: 10px;
     }
 }
